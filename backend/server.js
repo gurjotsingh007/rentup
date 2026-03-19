@@ -17,13 +17,13 @@ async function startServer() {
         });
         
         const __dirname = path.resolve();
-
+        /*
         app.use(express.static(path.join(__dirname, '/frontend/build')));
 
         app.get('*', (req, res) =>
             res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')
             ));
-
+*/
         const server = app.listen(3000, process.env.HOST, () => {
             console.log(`Server is running on port 3000`);
         });
